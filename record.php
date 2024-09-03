@@ -14,13 +14,13 @@ $database="pranavv";
 
 $con=new mysqli($server,$username,$password,$database);
 
-$sql="INSERT INTO tbl_login(Email,First_Name,Last_Name,Gender,Password) VALUES($Email,$First,$Last,$Gender,$Pass)";
+$sql="INSERT INTO tbl_login(Email,First_Name,Last_Name,Gender,Password) VALUES('$Email','$First','$Last','$Gender','$Pass')";
 
 if($con->query($sql)===TRUE)
 {
 
-	echo"recorded";
-	
+	header("Location: http://localhost/XIID/PranavPalanchoke/welcome.html");
+	exit();
 }
 else
 {
@@ -28,6 +28,9 @@ else
 }
 
 $sqlfetch="select * from tbl_login";
+
+
+
 
 
 
