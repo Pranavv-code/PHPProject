@@ -20,22 +20,39 @@
             background-color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 40px; /* Increased padding for more space around text */
-            width: 80%; /* Adjust width as needed */
-            max-width: 600px; /* Set a max width for larger screens */
+            padding: 40px;
+            width: 80%;
+            max-width: 600px;
             box-sizing: border-box;
         }
 
         .message {
-            font-size: 36px; /* Larger font size */
-            color: #00796b; /* Teal color for the text */
+            font-size: 48px; /* Larger font size for emphasis */
+            color: #00796b;
             margin: 0;
+        }
+
+        .login-button {
+            margin-top: 20px; /* Space between the text and button */
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #ffffff;
+            background-color: #00796b;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-button:hover {
+            background-color: #004d40;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <p class="message">You are Registered</p>
+        <button class="login-button" onclick="window.location.href='login.html';">Log In</button>
     </div>
 </body>
 </html>
